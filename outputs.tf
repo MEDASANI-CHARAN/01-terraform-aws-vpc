@@ -1,5 +1,5 @@
 output "az_info" {
-  value = slice(data.aws_availability_zones.available, 0, 2)
+  value = data.aws_availability_zones.available
 }
 
 output "default_vpc" {
@@ -9,4 +9,3 @@ output "default_vpc" {
 output "default_vpc_main" {
   value = data.aws_route_table.main.id
 }
-
