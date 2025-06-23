@@ -85,7 +85,7 @@ variable "database_subnet_cidrs" {
 }
 
 variable "is_peering_required" {
-  default = "true"
+  default = "false"
 }
 
 variable "vpc_peering_tags" {

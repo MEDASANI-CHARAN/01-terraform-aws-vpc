@@ -5,3 +5,8 @@ output "az_info" {
 output "default_vpc" {
   value = data.aws_vpc.default_vpc.id
 }
+
+output "default_vpc_main" {
+  value = data.aws_route_table.main.id
+}
+
