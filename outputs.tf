@@ -1,5 +1,5 @@
 output "az_info" {
-  value = data.aws_availability_zones.available
+  value = slice(data.aws_availability_zones.available, 0, 2)
 }
 
 output "default_vpc" {
